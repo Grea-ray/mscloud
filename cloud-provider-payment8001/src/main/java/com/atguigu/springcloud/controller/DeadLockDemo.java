@@ -51,6 +51,9 @@ public class DeadLockDemo {
         String lockA = "lockA";
         String lockB = "lockB";
         String lockmas = "lockB";
+        String lockdev = "lockB";
+        String lockdev1 = "lockB";
+        String lockmas1 = "lockB";
 
         new Thread(new HoldLockThread(lockA, lockB), "t1").start();
 
